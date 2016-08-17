@@ -8,19 +8,33 @@ html, body {
 body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.intro-message {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-}
-.intro-message h1 {
-    margin: 0;
+
+hr.star-primary {
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+hr.star-primary:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 2em;
+    padding: 0 0.25em;
+}
+hr.star-primary {
+    border-color: #41C4AB;
+}
+hr.star-primary:after {
+    background-color: white;
+    color: #2C3E50;
 }
 
+/* Header */
 .header {
     display: table;
     position: relative;
@@ -32,12 +46,23 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
-
-.btn-dark {
-    border-radius: 0;
+.intro-message {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
     color: #fff;
-    background: rgba(0,0,0,0.4);
 }
+.intro-message h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5.5em;
+    font-weight: 700;
+}
+.intro-message h2 {
+    font-family: Redressed, cursive;
+    font-size: 4em;
+}
+
 
 /* Sidebar */
 #sidebar-wrapper {
@@ -107,4 +132,123 @@ body {
 }
 .toggle {
     margin: 5px 5px 0 0;
+}
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+}
+
+/* About */
+#about {
+    padding: 30px;
+}
+
+#about h1, #portfolio h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+}
+#about p {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* Portfolio */
+.text-faded {
+    color: rgba(255,255,255,0.7);
+}
+.no-padding {
+    padding: 0;
+}
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+    color: white;
+    opacity: 0;
+    display: block;
+    background: #152840; /*background: rgba(240,95,64,0.9); #56ccc8*/
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    padding: 0 15px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+.portfolio-box:focus {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+footer span.copyright {
+    line-height: 40px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul.social-buttons {
+    margin-bottom: 0;
+}
+ul.social-buttons li a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #41C4AB;
+}
+
+/* Media Queries for Portfolio */
+@media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
 }

@@ -8,4 +8,5 @@ $(document).ready(function () {
        e.preventDefault();
         $('#sidebar-wrapper').toggleClass("active");
     });
+    
 });
