@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Federo|Redressed);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css);
+
 html, body {
     width: 100%;
     height: 100%;
@@ -105,9 +105,12 @@ hr.star-primary:after {
     text-indent: 20px;
     line-height: 40px;
 }
+
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
     color: #fff;
 }
 .sidebar-nav li a:hover {
@@ -119,10 +122,14 @@ hr.star-primary:after {
     height: 55px;
     font-size: 18px;
     line-height: 55px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
 }
+
 .sidebar-nav > .sidebar-brand a {
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 }
 .sidebar-nav > .sidebar-brand a:hover {
     background: none;
@@ -151,11 +158,25 @@ hr.star-primary:after {
     color: #fff;
     background: rgba(0,0,0,0.4);
 }
+.social-btns {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 24px;
+    padding: 10px;
+}
+.social-btns a {
+    color: #fff;
+    padding: 10px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
 
 /* About */
 #about {
     padding: 30px;
-    background: #e3ebec;
+    background-color: #e3ebec;
 }
 
 #about p {
@@ -250,7 +271,7 @@ hr.star-primary:after {
 }
 .no-padding {
     padding: 30px;
-    background: #e3ebec;
+    background-color: #e3ebec;
 }
 .portfolio-box {
     position: relative;
@@ -321,7 +342,7 @@ ul.social-buttons li a {
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 40px;
     color: white;
     outline: none;
