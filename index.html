@@ -8,7 +8,12 @@
         <meta name="author" content="Pranay Kumar Rudra">
         
         <title>PRANAY KUMAR RUDRA | Front-End Developer</title>
-        
+            <link href="assets/css/plugins/hover/hover.min.css" rel="stylesheet">
+            <link href="assets/css/plugins/owl.carousel/owl.carousel.css" rel="stylesheet">
+            <link href="assets/css/plugins/owl.carousel/owl.theme.css" rel="stylesheet">
+            <link href="assets/css/plugins/owl.carousel/owl.transitions.css" rel="stylesheet">
+            <link href="assets/css/plugins/jquery.fs.wallpaper/jquery.fs.wallpaper.css" rel="stylesheet">
+            <link href="assets/css/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <!-- Custom CSS -->
@@ -56,7 +61,7 @@
             <div class="intro-message">
                 <h1>Hi,</h1>
                 <h2>I'm Pranay Kumar Rudra</h2>
-                <h3>I'm a Front-Web Developer living in San Francisco, California.</h3>
+                <h3>I'm a Front-End Web Developer living in San Francisco, California.</h3>
             </div>
         </header>
         
@@ -68,33 +73,71 @@
                         <img src="images/about.jpg" alt="myPic" class="img-responsive">
                     </div>
                     <div class="col-md-6 text-center">
-                        <h1 class="text-center text-uppercase">About Me</h1>
+                        <h1 class="text-center text-uppercase"><span class="first-word">About</span> Me</h1>
                         <hr class="star-primary">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus pharetra velit, eget malesuada nulla accumsan nec. Duis porta gravida nunc, sed consectetur odio tempor et.</p>
-                        <p>Pellentesque bibendum erat nisl, ultricies pellentesque quam rhoncus a. Nam at fermentum lacus. Ut eu lacus eu elit varius sagittis eget vitae tellus. Curabitur sollicitudin eros vitae arcu molestie pulvinar nec cursus felis. </p>
+                        <p>I'm passionate about the web and innovative technologies. I thrive on understanding basic concepts and ideas in order. My goal is to become Full-Stack Web Developer and currently seeking for full-time positions.</p>
                     </div>
                 </div>
             </div>
         </section>
         
+        <article id="skills" class="container-fluid">
+            <h1 class="text-center text-uppercase"><span class="first-word">My</span> Skills</h1>
+            <hr class="star-primary horizontal-skill">
+            <div class="skillbar clearfix" data-percent="85%">
+                <div class="skillbar-title" style="background: #F06529;">
+                    <span>HTML5</span>
+                </div>
+                <div class="skillbar-bar" style="background: #F06529;"></div>
+                <div class="skill-bar-percent">85%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="80%">
+                <div class="skillbar-title" style="background: #002561;">
+                    <span>CSS3</span>
+                </div>
+                <div class="skillbar-bar" style="background: #002561;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="90%">
+                <div class="skillbar-title" style="background: #4B0082;">
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skillbar-bar" style="background: #4B0082;"></div>
+                <div class="skill-bar-percent">90%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+                <div class="skillbar-title" style="background: #e6e600;">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skillbar-bar" style="background: #e6e600;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="75%">
+                <div class="skillbar-title" style="background: #0769AD;">
+                    <span>jQuery</span>
+                </div>
+                <div class="skillbar-bar" style="background: #0769AD;"></div>
+                <div class="skill-bar-percent">75%</div>
+            </div>
+        </article>
+        
         <!-- Portfolio -->
-        <article id="portfolio" class="no-padding">
+        <figure id="portfolio" class="no-padding">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="text-center text-uppercase">My Portfolio</h1>
+                        <h1 class="text-center text-uppercase"><span class="first-word">My</span> Portfolio</h1>
                         <hr class="star-primary">
                     </div>
                 </div>
-
-                <div class="row no-gutter popup-gallery">
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="images/project-1.png.jpeg" class="portfolio-box">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <a href="#portfolio-modal-1" class="portfolio-box" data-toggle="modal">
                             <img class="img-responsive" src="images/project-1.jpeg" alt="Project-1">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
-                                        FreeCodeCamp
+                                        FreeCodeCamp<hr class="horizontal-line">
                                     </div>
                                     <div class="project-name">
                                         A Tribute Page
@@ -103,13 +146,13 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="images/coming.soon.jpg" class="portfolio-box">
+                    <div class="col-lg-4 col-sm-4">
+                        <a href="images/coming.soon.jpg" class="portfolio-box" data-toggle="modal" data-target="#myModal">
                             <img class="img-responsive" src="images/project-2.jpeg" alt="Project-2">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
-                                        FreeCodeCamp
+                                        FreeCodeCamp<hr class="horizontal-line">
                                     </div>
                                     <div class="project-name">
                                         My Portfolio
@@ -118,13 +161,13 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a href="images/coming.soon.jpg" class="portfolio-box">
+                    <div class="col-lg-4 col-sm-4">
+                        <a href="images/coming.soon.jpg" class="portfolio-box" data-toggle="modal" data-target="#myModal">
                             <img class="img-responsive" src="images/project-3.jpeg" alt="Project-3">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
                                     <div class="project-category text-faded">
-                                        JavaScript
+                                        JavaScript<hr class="horizontal-line">
                                     </div>
                                     <div class="project-name">
                                         Quiz App
@@ -135,7 +178,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </figure>
         
         <!-- Footer -->
         <footer class="container-fluid">
@@ -163,7 +206,6 @@
                 </div>
             </div>
         </footer>
-        
         
         <script src="js/jquery-3.1.0.js"></script>
         <script src="js/bootstrap.min.js"></script>
