@@ -175,7 +175,7 @@ hr.star-primary:after {
 
 /* About */
 #about {
-    padding: 30px;
+    padding: 50px;
     background-color: #e3ebec;
 }
 
@@ -203,7 +203,7 @@ hr.star-primary:after {
     position: relative;
     display: block;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     width: 100%;
     max-width: 500px;
     background: #eee;
@@ -270,7 +270,7 @@ hr.star-primary:after {
     color: rgba(255,255,255,0.7);
 }
 .no-padding {
-    padding: 30px;
+    padding: 100px;
     background-color: #e3ebec;
 }
 .portfolio-box {
